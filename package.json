@@ -1,0 +1,11 @@
+{
+  "name": "hexo-tag-bootstrap",
+  "version": "0.0.1",
+  "main": "index",
+  "author": {
+    "name": "Joseph Pan",
+    "email": "cs.wzpan@gmail.com",
+    "url": "http://hahack.com/"
+  },
+  "dependencies": {}
+}
