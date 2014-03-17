@@ -20,7 +20,7 @@ module.exports = function(args, content)
 
 	var text = render.renderSync({text: content, engine: 'markdown'});
 	text = text.substring(3, text.length-5);
-	
+
 	if (args.length > 1) {
 		index = args[1];
 		note = "<span class='block margin-div-outer'><span class='block margin-div-inner'><span class='block margin-note'><img src=" + url + " alt='" + text + "'></img><b>Fig " + index + "</b> " + text + "</span></span></span>"; 

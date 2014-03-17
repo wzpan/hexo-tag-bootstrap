@@ -10,33 +10,26 @@ var render = hexo.render;
  */
 
 module.exports = function(args, content){
-	var color;
+	var style, icon;
 	if (args.length > 0)
-		color = args[0];
+		style = args[0];
 	else
-		color = 'green';
+		style = 'info';
 
-	var icon, style;
-
-	switch(color){
-		case 'green':
-			style = 'success';
+	switch(style){
+		case 'success':
 			icon = 'fa-lightbulb-o';
 			break;
-		case 'blue':
-			style = 'info';
+		case 'info':
 			icon = 'fa-info';
 			break;
-		case 'yellow':
-			style = 'warning';
+		case 'warning':
 			icon = 'fa-bell';
 			break;
-		case 'red':
-			style = 'error';
+		case 'danger':
 			icon = 'fa-bug';
 			break;
 		default:
-			style = 'success';
 			icon = 'fa-lightbulb-o';
 			break;
 	}
