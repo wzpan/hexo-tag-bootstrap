@@ -5,7 +5,7 @@ hexo-tag-bootstrap
 
 hexo-tag-bootstrap is a collections of Hexo tag plugins.
 
-It wraps most [Twitter-Bootstrap](getbootstrap.com/) 3.1.1 components in a uniformed way. It can be used independently, though I highly recommend you to use it with [Freemind](http://github.com/wzpan/freemind/), a Bootstrap theme for Hexo.
+It wraps most [Twitter-Bootstrap](http://getbootstrap.com/) 3.1.1 components in a uniformed way. It can be used independently, though I highly recommend you to use it with [Freemind](http://github.com/wzpan/freemind/), a Bootstrap theme for Hexo.
 
 ## Components ##
 
