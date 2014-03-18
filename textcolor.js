@@ -10,14 +10,17 @@ var render = hexo.render;
  */
 
 module.exports = function(args, content){
-	var style, icon;
+	
+	var style;
 	if (args.length > 0)
 		style = args[0];
 	else
 		style = 'info';
 
-	content = render.renderSync({text: content, engine: 'markdown'});
+	
 	var text = '<p class="text-' + style + '">' + content + '</p>';
 
+	text = render.renderSync({text: text, engine: 'markdown'});
+	
 	return text;
 };
