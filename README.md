@@ -26,3 +26,4 @@ More info: http://hahack.tk/freemind/2014/03/16/tag-plugins/
 ## Dependencies ##
 
 * [Twitter-Bootstrap](http://getbootstrap.com/) >= 3.1.1
+* [FontAwesome](http://fortawesome.github.io/Font-Awesome/) >= 3.0
