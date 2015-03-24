@@ -1,11 +1,27 @@
 {
   "name": "hexo-tag-bootstrap",
   "version": "0.0.8",
-  "main": "index",
   "author": {
     "name": "Joseph Pan",
     "email": "cs.wzpan@gmail.com",
     "url": "http://hahack.com/"
   },
-  "dependencies": {}
+  "tags": [
+    "tag_plugins",
+    "bootstrap",
+    "hexo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wzpan/hexo-tag-plugins.git"
+  },
+  "bugs": {
+    "url": "http://github.com/wzpan/hexo-tag-plugins/issues"
+  },
+  "dependencies": {},
+  "readmeFilename": "README.md",
+  "description": "hexo-tag-plugins",
+  "homepage": "https://github.com/wzpan/hexo-tag-plugins",
+  "_id": "hexo-tag-plugins@0.0.8",
+  "_from": "hexo-tag-plugins@"
 }

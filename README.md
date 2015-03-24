@@ -21,7 +21,7 @@ $ npm install hexo-tag-bootstrap --save
 * **badge** - Inserts a badge with text.
 * **alert** - Inserts alert messages with text and specified color.
 
-More info: http://hahack.tk/hexo-theme-freemind/2014/03/16/tag-plugins/
+More info: http://wzpan.github.io/hexo-theme-freemind/2014/03/16/tag-plugins/
 
 ## Dependencies ##
 
