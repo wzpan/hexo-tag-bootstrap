@@ -25,5 +25,6 @@ More info: http://hahack.tk/hexo-theme-freemind/2014/03/16/tag-plugins/
 
 ## Dependencies ##
 
+* [Hexo](http://hexo.io) >= 3.0
 * [Twitter-Bootstrap](http://getbootstrap.com/) >= 3.1.1
 * [FontAwesome](http://fortawesome.github.io/Font-Awesome/) >= 3.0

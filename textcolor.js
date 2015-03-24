@@ -1,5 +1,5 @@
-var render = hexo.render;
-
+var Hexo = require('hexo');
+var hexo = new Hexo(process.cwd(), {});
 /**
  * alert tag
  *
@@ -20,7 +20,7 @@ module.exports = function(args, content){
 	
 	var text = '<p class="text-' + style + '">' + content + '</p>';
 
-	text = render.renderSync({text: text, engine: 'markdown'});
+	text = hexo.render.renderSync({text: text, engine: 'markdown'});
 	
 	return text;
 };
