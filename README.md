@@ -31,4 +31,4 @@ More info: http://wzpan.github.io/hexo-theme-freemind/2014/03/16/tag-plugins/
 
 ## Tips for non bootstrap-based theme ##
 
-If you're using a Hexo theme that is not built on Twitter Bootstrap, you can have a try at [a minimal CSS](http://hastebin.com/fucikehati.css) provided by @shark-oxi which wraps all the neccessary stylesheets for the above plugins.
+If you're using a Hexo theme that is not built on Twitter Bootstrap, you can have a try at [a minimal CSS](http://hastebin.com/fucikehati.css) provided by @[shark-oxi](https://github.com/shark-oxi) which wraps all the neccessary stylesheets for the above plugins.
