@@ -26,7 +26,7 @@ More info: http://wzpan.github.io/hexo-theme-freemind/2014/03/16/tag-plugins/
 ## Dependencies ##
 
 * [Hexo](http://hexo.io) >= 3.0
-* [Twitter-Bootstrap](http://getbootstrap.com/) >= 3.1.1
+* [Twitter-Bootstrap](http://getbootstrap.com/) >= 3.1.1  （Suggested. You can alternatively try a minimal CSS given bellow.）
 * [FontAwesome](http://fortawesome.github.io/Font-Awesome/) >= 3.0
 
 ## Tips for non bootstrap-based theme ##
