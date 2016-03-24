@@ -28,3 +28,7 @@ More info: http://wzpan.github.io/hexo-theme-freemind/2014/03/16/tag-plugins/
 * [Hexo](http://hexo.io) >= 3.0
 * [Twitter-Bootstrap](http://getbootstrap.com/) >= 3.1.1
 * [FontAwesome](http://fortawesome.github.io/Font-Awesome/) >= 3.0
+
+## Tips for non bootstrap-based theme ##
+
+If you're using a Hexo theme that is not built on Twitter Bootstrap, you can have a try at [a minimal CSS](http://hastebin.com/fucikehati.css) provided by @shark-oxi which wraps all the neccessary stylesheets for the above plugins.
