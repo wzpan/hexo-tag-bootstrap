@@ -1,6 +1,8 @@
 hexo-tag-bootstrap
 ===
 
+[![npm](https://img.shields.io/npm/dm/hexo-tag-bootstrap.svg)](https://www.npmjs.com/package/hexo-tag-bootstrap)
+
 ## Intro ##
 
 hexo-tag-bootstrap is a collections of Hexo tag plugins.
