@@ -1,7 +1,7 @@
 hexo-tag-bootstrap
 ===
 
-[![npm](https://img.shields.io/npm/v/hexo-generator-search.svg)](https://www.npmjs.com/package/hexo-generator-search)
+[![npm](https://img.shields.io/npm/v/hexo-tag-bootstrap.svg)](https://www.npmjs.com/package/hexo-tag-bootstrap)
 [![npm](https://img.shields.io/npm/dm/hexo-tag-bootstrap.svg)](https://www.npmjs.com/package/hexo-tag-bootstrap)
 
 ## Intro ##
