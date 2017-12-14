@@ -18,6 +18,10 @@ module.exports = function(args, content){
 		style = 'info';
 
 	switch(style){
+		case 'primary': break;
+		case 'secondary': break;
+		case 'light': break;
+		case 'dark': break;
 		case 'success':
 			icon = 'fa-lightbulb-o';
 			break;
@@ -31,12 +35,13 @@ module.exports = function(args, content){
 			icon = 'fa-bug';
 			break;
 		default:
+			style = 'primary';
 			icon = 'fa-lightbulb-o';
 			break;
 	}
 
 	content = hexo.render.renderSync({text: content, engine: 'markdown'});
-	var text = '<div class="alert alert-' + style + '"><i class="fa ' + icon + '"></i>  ' + content + '</div>';
-
-	return text;
+	if(icon)
+		return '<div class="alert alert-' + style + '"><i class="fa ' + icon + '"></i>  ' + content + '</div>';
+	return '<div class="alert alert-' + style + '">' + content + '</div>';	
 };

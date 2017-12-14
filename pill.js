@@ -1,8 +1,8 @@
 /**
- * badge tag
+ * pill tag
  *
  * Syntax:
- *   {% badge color text %}
+ *   {% pill type text %}
  */
 var types = {primary:true, secondary:true, success:true, danger:true, warning:true, info:true, light:true, dark:true};
 module.exports = function(args, content){
@@ -14,11 +14,8 @@ module.exports = function(args, content){
 		text = args[1];
 	}
 
-	if(!types[type]) {
-		if(!text)
-			type = text;
+	if(!types[type])
 		type = 'secondary';
-	}
 
-	return '<span class="badge badge-'+type+'">' + text + '</span>';
+	return '<span class="badge badge-pill badge-'+type+'">' + text + '</span>';
 };

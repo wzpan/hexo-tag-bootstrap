@@ -6,7 +6,7 @@ var hexo = new Hexo(process.cwd(), {});
  * Syntax:
  *   {% textcolor [color] %}
  *   text string
- *   {% endalert %}
+ *   {% endtextcolor %}
  */
 
 module.exports = function(args, content){
