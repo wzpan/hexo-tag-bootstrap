@@ -1,10 +1,15 @@
-hexo.extend.tag.register('label', require('./label'));
-hexo.extend.tag.register('badge', require('./badge'));
-hexo.extend.tag.register('btn', require('./btn'));
-hexo.extend.tag.register('pill', require('./pill'));
+'use strict';
 
-var alert = require('./alert');
-hexo.extend.tag.register('alert', alert, true);
+var ctx = hexo;
+var tag = ctx.extend.tag;
 
-var textcolor = require('./textcolor');
-hexo.extend.tag.register('textcolor', textcolor, true);
+tag.register('label', require('./label'));
+tag.register('badge', require('./badge'));
+tag.register('btn', require('./btn'));
+tag.register('pill', require('./pill'));
+
+tag.register('row', require('./row')(ctx), true);
+tag.register('col', require('./col')(ctx), true);
+tag.register('alert', require('./alert')(ctx), true);
+tag.register('card', require('./card')(ctx), true);
+tag.register('textcolor', require('./textcolor')(ctx), true);

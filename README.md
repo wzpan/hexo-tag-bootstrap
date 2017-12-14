@@ -23,6 +23,7 @@ $ npm install hexo-tag-bootstrap --save
 ** {% badge color text %}
 * **badge** - Inserts a badge with text.
 * **alert** - Inserts alert messages with text and specified color.
+* **card** - Add a card control
 
 For most options like style (primary, secondary, success, danger, warning, info, light, dark) simply set the option, the order normally does not matter
 
@@ -34,6 +35,35 @@ More info: http://wzpan.github.io/hexo-theme-freemind/2014/03/16/tag-plugins/
 {%pill test%}
 {%pill success Successfull!!!%}
 ```
+
+Row with 3 entrieS: 2 card and one col
+```
+{% row %}
+
+{% col md-4 %}
+This is a test
+* One
+* Two
+* Three
+{% endcol %}
+
+{% card col=md-4 "Cool card" %}
+Our cool stuff:
+* coole Features
+* something else
+{% endcard %}
+
+{% card col=md-4  %}
+# heading 1
+### sub heading 
+This is Some content
+* pos 1
+* pos 2
+{% endcard %}
+
+{% endrow %}
+```
+
 
 ## Dependencies ##
 
