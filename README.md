@@ -30,9 +30,9 @@ More info: http://wzpan.github.io/hexo-theme-freemind/2014/03/16/tag-plugins/
 
 ### Samples ###
 ```
-{{btn http://www.google.com Google danger lg outline}}
-{{pill test}}
-{{pill success Successfull!!!}}
+{%btn http://www.google.com "Lets visit Google" danger lg outline%}
+{%pill test%}
+{%pill success Successfull!!!%}
 ```
 
 ## Dependencies ##
