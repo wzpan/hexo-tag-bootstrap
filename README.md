@@ -39,7 +39,7 @@ For most options like style (primary, secondary, success, danger, warning, info,
 Other components in the content (i.e. images) can be applied using classes and the information on http://getbootstrap.com/docs/4.0/content/images/
 
 
-More info: http://wzpan.github.io/hexo-theme-freemind/2014/03/16/tag-plugins/
+More info: http://wzpan.github.io/hexo-theme-freemind-blog/2014/03/16/tag-plugins/
 
 ### Grid ###
 
