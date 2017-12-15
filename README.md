@@ -13,6 +13,8 @@ It wraps most [Twitter-Bootstrap](http://getbootstrap.com/) 4 components in a un
 $ npm install hexo-tag-bootstrap --save
 ```
 
+Make sure to have the bootstrap css in you template before using any of these!
+
 ## Components ##
 
 * **textcolor** - Convey meaning through color with a handful of emphasis utility classes.
@@ -24,12 +26,52 @@ $ npm install hexo-tag-bootstrap --save
 * **badge** - Inserts a badge with text.
 * **alert** - Inserts alert messages with text and specified color.
 * **card** - Add a card control
+* **jumbo** - jumbotron
+* **carousel** - carousel tag - each img within will create a new "slide"
+* **row** - add a grid row
+* **col** - add a column within a grid row
 
-For most options like style (primary, secondary, success, danger, warning, info, light, dark) simply set the option, the order normally does not matter
+For most options like style (primary, secondary, success, danger, warning, info, light, dark) simply set the option, the order normally does not matter.
+
+Other components in the content (i.e. images) can be applied using classes and the information on http://getbootstrap.com/docs/4.0/content/images/
+
 
 More info: http://wzpan.github.io/hexo-theme-freemind/2014/03/16/tag-plugins/
 
-### Samples ###
+### Grid ###
+
+The bootstrap grid is best explained at http://getbootstrap.com/docs/4.0/layout/grid/
+
+To use it with hexo, simply add a row and within add cols
+```
+{% row %}
+  {% col  %}
+    a column
+  {% endcol  %}
+{% endrow %}
+```
+
+you can add any number of sm/md/lg/xl classes to adjus the colos (you can omit the .col-:
+```
+{% row %}
+  {% col md-4 xl-4 %} col a {% endcol %} 
+  {% col md-6 xl-4 %} col b {% endcol %} 
+  {% col md-2 xl-4 %} col c {% endcol %} 
+{% endrow %}
+```
+
+The card also supports col directly, by simply adding *col* or *col=4* (you can use the same class prefixes as above):
+
+```
+{% row %}
+  {% col md-4 %}  a column  {% endcol  %}
+  {% card col=md-4 "Cool card" %} a column  {% endcard  %}
+  {% col md-4 %}  a column  {% endcol  %}
+{% endrow %}
+```
+
+
+## Samples ##
 ```
 {%btn http://www.google.com "Lets visit Google" danger lg outline%}
 {%pill test%}
@@ -62,6 +104,16 @@ This is Some content
 {% endcard %}
 
 {% endrow %}
+```
+
+Carousel (with 2 images, first with caption)
+```
+{% carousel nav indicators %}
+{% img d-block w-100 /stock/img1.jpg %}
+# First Slide
+This is a label for the slide :) 
+{% img d-block w-100 /stock/img2.jpg %}
+{% endcarousel %}
 ```
 
 

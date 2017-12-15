@@ -12,4 +12,7 @@ tag.register('row', require('./row')(ctx), true);
 tag.register('col', require('./col')(ctx), true);
 tag.register('alert', require('./alert')(ctx), true);
 tag.register('card', require('./card')(ctx), true);
+tag.register('carousel', require('./carousel')(ctx), true);
+tag.register('jumbo', require('./jumbo')(ctx), true);
+tag.register('jumbotron', require('./jumbo')(ctx), true);
 tag.register('textcolor', require('./textcolor')(ctx), true);
