@@ -88,7 +88,7 @@ module.exports = function(ctx) {
 		smartLists: false
 	});
 	// clean up some "bad" end-of card rendering
-	if(content.lastIndexOf('<div class="card-body">'))
+	if(content.lastIndexOf('<div class="card-body">') !== -1)
 		content = content.substring(0, content.length - 34);
 	else
 		content += "</div>";
