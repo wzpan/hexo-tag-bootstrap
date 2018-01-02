@@ -128,4 +128,4 @@ This is a label for the slide :)
 
 ## Tips for non bootstrap-based theme ##
 
-If you're using a Hexo theme that is not built on Twitter Bootstrap, you can have a try at [a minimal CSS](https://gist.github.com/wzpan/ad05a8bb162fbc560259) provided by @[shark-oxi](https://github.com/shark-oxi) which wraps all the neccessary stylesheets for the above plugins.
+If you're using a Hexo theme that is not built on Twitter Bootstrap, you can have a try at [a minimal CSS](https://gist.github.com/wzpan/ad05a8bb162fbc560259) provided by @[noraj1337](https://github.com/noraj1337) which wraps all the neccessary stylesheets for the above plugins.
