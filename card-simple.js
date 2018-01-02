@@ -1,44 +1,14 @@
 'use strict';
 /**
  * card tag
- *
+ * Only basic functionality.
  * Syntax:
  *   {% card [header] [title=title] [subtitle=] [img=src] [imgalt=alt] [col=12,sm-1,lg-3]%}
- *   Alert string
+ *   content
  *   {% endcard %}
  */
 
-var marked = require('marked');
-var renderer = new marked.Renderer();
 
-/**
- * level 1-3: title
- * 4-*: subtitle (muted)
- */
-renderer.heading = function(text, level) {
-	// adjust level
-	level += 2;
-	if(level < 5) {
-		return '<h' + level + ' class="card-title">' + text + '</h' + level + '>';
-	} 
-	return '<h' + level + ' class="card-subtitle mb-2 text-muted">' + text + '</h' + level + '>';
-}
-
-renderer.list = function(body, ordered) {
-	var type = ordered ? 'ol' : 'ul';
-	return '</div><' + type + ' class="list-group list-group-flush">\n' + body + '</' + type + '>\n<div class="card-body">';
-}
-
-renderer.listitem = function(text) {
-	return '<li class="list-group-item">' + text + '</li>';
-}
-
-renderer.paragraph = function(text){
-	return '<p class="card-text">' + text + '</p>';
-}
-renderer.br = function() {
-	return "";
-}
 
 function replaceAll(str, find, replace) {
     return str.replace(new RegExp(find.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1"), 'g'), replace);
@@ -83,7 +53,6 @@ module.exports = function(ctx) {
 	
 	
 	content = ctx.render.renderSync({text: content, engine: 'markdown'}, { 
-		renderer: renderer,
 		breaks: true,
 		smartLists: false
 	});
