@@ -128,4 +128,4 @@ This is a label for the slide :)
 
 ## Tips for non bootstrap-based theme ##
 
-If you're using a Hexo theme that is not built on Twitter Bootstrap, you can have a try at [a minimal CSS](https://gist.github.com/wzpan/ad05a8bb162fbc560259) provided by @[noraj1337](https://github.com/noraj1337) which wraps all the neccessary stylesheets for the above plugins.
+If you're using a Hexo theme that is not built on Twitter Bootstrap, you can have a try at [a minimal CSS](https://gist.github.com/noraj1337/378b7aa01cc4f4c079120e6c2e2e3593) provided by @[noraj1337](https://github.com/noraj1337) which wraps all the neccessary stylesheets for the above plugins. For example for stylus theme templates include `tag.css` like this `@import "tag.css"` at the end of `themes/theme_name/source/css/style.styl` and place `tag.css` in `themes/theme_name/source/css/`.
