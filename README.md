@@ -26,6 +26,8 @@ Make sure to have the bootstrap css in you template before using any of these!
 * **badge** - Inserts a badge with text.
 * **alert** - Inserts alert messages with text and specified color.
 * **card** - Add a card control
+** *carddeck* - use with cards to combine multiples
+** *cardgroup* - similar to carddeck
 * **jumbo** - jumbotron
 * **carousel** - carousel tag - each img within will create a new "slide"
 * **row** - add a grid row
