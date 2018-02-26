@@ -9,6 +9,9 @@ tag.register('badge', require('./badge'));
 tag.register('btn', require('./btn'));
 tag.register('pill', require('./pill'));
 
+tag.register('modal', require('./modal')(ctx), true);
+tag.register('modalbtn', require('./modalbtn'));
+
 tag.register('carddeck', require('./carddeck')(ctx), true);
 tag.register('cardgroup', require('./cardgroup')(ctx), true);
 tag.register('row', require('./row')(ctx), true);
