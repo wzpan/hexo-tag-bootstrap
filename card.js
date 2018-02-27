@@ -48,7 +48,9 @@ module.exports = function(ctx) {
 	var header, subtitle, title, img, imgAlt;
 	var col;
 	var i,j;
-	
+
+	content = content.replace(/\n\n/g, "#n").replace(/\n/g, "").replace(/#n/g, "\n");
+
 	for(i = 0; i < args.length; i++) {
 		var idx = args[i].indexOf("=");
 		if(idx == -1) {

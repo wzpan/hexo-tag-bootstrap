@@ -25,9 +25,11 @@ module.exports = function(ctx) {
 		return 	'<div id="' + id + '" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">' +
 			'<div class="modal-dialog modal-' + size + '">' +
 				'<div class="modal-content">' +
+					'<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="$(\'#' + id + '\').modal(\'toggle\');">' +
+		        		'<span aria-hidden="true">&times;</span>' +
+		        	'</button>' +
 					content +
 				'</div>' +
-			'</div>' +
 		'</div>';
 	};		
 };
