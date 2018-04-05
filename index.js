@@ -11,6 +11,7 @@ tag.register('pill', require('./pill'));
 
 tag.register('modal', require('./modal')(ctx), true);
 tag.register('modalbtn', require('./modalbtn'));
+tag.register('input', require('./input'));
 
 tag.register('container', require('./container')(ctx), true);
 tag.register('carddeck', require('./carddeck')(ctx), true);

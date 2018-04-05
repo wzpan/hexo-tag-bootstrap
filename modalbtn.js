@@ -36,5 +36,5 @@ module.exports = function(args, content) {
 		style = style + " btn-" + size;
 	}
 
-	return '<a class="btn btn-' + style + '" data-toggle="modal" data-target="#' + id + '">' + text + '</a>'
+	return '<button class="btn btn-' + style + '" data-toggle="modal" data-target="#' + id + '">' + text + '</button>'
 };
