@@ -5,7 +5,7 @@
  *   {% label text [color] %}
  */
 
-module.exports = function(args, content){
+module.exports = ctx => function(args, content){
 	var text = args[0];
 	var style;
 	if (args.length > 1) {
@@ -13,5 +13,6 @@ module.exports = function(args, content){
 	} else {
 		style = 'default';
 	}
+    content = ctx.render.renderSync({text: content, engine: 'markdown'});
 	return '<span class="label label-' + style +'">' + text + '</span>';
 };

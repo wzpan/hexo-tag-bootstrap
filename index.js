@@ -4,7 +4,7 @@ var ctx = hexo;
 var tag = ctx.extend.tag;
 
 
-tag.register('label', require('./label'));
+tag.register('label', require('./label')(ctx));
 tag.register('badge', require('./badge'));
 tag.register('btn', require('./btn'));
 tag.register('pill', require('./pill'));
@@ -31,7 +31,7 @@ try {
 	tag.register('carousel', require('./carousel')(ctx), true);
 } catch(ex) {
 	// marked not available
-		tag.register('card', require('./card-simple')(ctx), true);
-		tag.register('carousel', require('./carousel-simple')(ctx), true);
+    tag.register('card', require('./card-simple')(ctx), true);
+	tag.register('carousel', require('./carousel-simple')(ctx), true);
 }
 
