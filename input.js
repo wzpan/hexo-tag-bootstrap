@@ -5,12 +5,6 @@
  *   {% input name "label" "placeholder" "help" textarea|email|password|select sm|lg required  %}
  */
 
-<div class="form-group">
-	<label for="name" class="required">Name</label>	
-	<input id="name" type="text" name="name">
-</div>
-
-
 var sizes = {sm:true, lg:true};
 var types = {textarea:true, email:true, password: true, select:true};
 
