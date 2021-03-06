@@ -1,37 +1,23 @@
-'use strict';
+hexo.extend.tag.register('label', require('./label')(hexo));
+hexo.extend.tag.register('badge', require('./badge'));
+hexo.extend.tag.register('btn', require('./btn'));
+hexo.extend.tag.register('mimg', require('./mimg'));
+hexo.extend.tag.register('hide', require('./hide'));
+hexo.extend.tag.register('slides', require('./slides'));
+hexo.extend.tag.register('eq', require('./eq'));
 
-var ctx = hexo;
-var tag = ctx.extend.tag;
+var alert = require('./alert')(hexo);
+hexo.extend.tag.register('alert', alert, true);
 
+var textcolor = require('./textcolor')(hexo);
+hexo.extend.tag.register('textcolor', textcolor, true);
 
-tag.register('label', require('./label')(ctx));
-tag.register('badge', require('./badge'));
-tag.register('btn', require('./btn'));
-tag.register('pill', require('./pill'));
+var mnote = require('./mnote')(hexo);
+hexo.extend.tag.register('mnote', mnote, true);
 
-tag.register('modal', require('./modal')(ctx), true);
-tag.register('modalbtn', require('./modalbtn'));
-tag.register('input', require('./input'));
+var wthought = require('./wthought')(hexo);
+hexo.extend.tag.register('wthought', wthought, true);
 
-tag.register('container', require('./container')(ctx), true);
-tag.register('carddeck', require('./carddeck')(ctx), true);
-tag.register('cardgroup', require('./cardgroup')(ctx), true);
-tag.register('row', require('./row')(ctx), true);
-tag.register('col', require('./col')(ctx), true);
-tag.register('alert', require('./alert')(ctx), true);
-tag.register('jumbo', require('./jumbo')(ctx), true);
-tag.register('jumbotron', require('./jumbo')(ctx), true);
-tag.register('textcolor', require('./textcolor')(ctx), true);
-
-// load modules requiring marked
-try {
-	// try to resolve marked to load the advanced card and carousel
-	require.resolve("marked");
-	tag.register('card', require('./card')(ctx), true);
-	tag.register('carousel', require('./carousel')(ctx), true);
-} catch(ex) {
-	// marked not available
-    tag.register('card', require('./card-simple')(ctx), true);
-	tag.register('carousel', require('./carousel-simple')(ctx), true);
-}
+var quote = require('./quote')(hexo);
+hexo.extend.tag.register('quote', quote, true);
 

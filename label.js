@@ -13,6 +13,6 @@ module.exports = ctx => function(args, content){
 	} else {
 		style = 'default';
 	}
-    content = ctx.render.renderSync({text: content, engine: 'markdown'});
+    text = ctx.render.renderSync({text: text, engine: 'markdown'});
 	return '<span class="label label-' + style +'">' + text + '</span>';
 };

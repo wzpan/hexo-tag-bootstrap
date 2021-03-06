@@ -1,21 +1,26 @@
+var Hexo = require('hexo');
+var hexo = new Hexo(process.cwd(), {});
 /**
- * text color tag
+ * alert tag
  *
  * Syntax:
  *   {% textcolor [color] %}
  *   text string
- *   {% endtextcolor %}
+ *   {% endalert %}
  */
 
-module.exports = function(ctx) {
-	return function textColorTag(args, content) {
-		
-		var style;
-		if (args.length > 0)
-			style = args[0];
-		else
-			style = 'info';
+module.exports = ctx => function(args, content){
+	
+	var style;
+	if (args.length > 0)
+		style = args[0];
+	else
+		style = 'info';
 
-		return '<p class="text-' + style + '">' + ctx.render.renderSync({text: content, engine: 'markdown'}) + '</p>\n';
-	};
+	
+	var text = '<p class="text-' + style + '">' + content + '</p>';
+
+	text = ctx.render.renderSync({text: text, engine: 'markdown'});
+	
+	return text;
 };

@@ -1,25 +1,86 @@
 {
-  "name": "hexo-tag-bootstrap",
-  "version": "0.2.1",
+  "_args": [
+    [
+      {
+        "raw": "hexo-tag-hahack@0.0.8",
+        "scope": null,
+        "escapedName": "hexo-tag-hahack",
+        "name": "hexo-tag-hahack",
+        "rawSpec": "0.0.8",
+        "spec": "0.0.8",
+        "type": "version"
+      },
+      "/home/wzpan/文档/hexo-theme-freemind/themes/freemind"
+    ]
+  ],
+  "_from": "hexo-tag-hahack@0.0.8",
+  "_id": "hexo-tag-hahack@0.0.8",
+  "_inBundle": false,
+  "_inCache": true,
+  "_integrity": "sha512-VwtatVHaEIT3Q9a6fsvmzAi5rFX3sQ4bAUNlhAufbq2pvJ9A4FF7NKAHUqXzjpiboVZJBd5+uN2YAWoQfc3lFA==",
+  "_location": "/hexo-tag-hahack",
+  "_nodeVersion": "0.10.25",
+  "_npmUser": {
+    "name": "hahack",
+    "email": "cs.wzpan@gmail.com"
+  },
+  "_npmVersion": "2.7.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "hexo-tag-hahack@0.0.8",
+    "name": "hexo-tag-hahack",
+    "escapedName": "hexo-tag-hahack",
+    "rawSpec": "0.0.8",
+    "saveSpec": null,
+    "fetchSpec": "0.0.8"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hexo-tag-hahack/-/hexo-tag-hahack-0.0.8.tgz",
+  "_shasum": "3fbfeae24ca1e7a10b287172c5a4e1c8694e6d93",
+  "_shrinkwrap": null,
+  "_spec": "hexo-tag-hahack@0.0.8",
+  "_where": "/Users/wzpan/Documents/projects/hexo-blog",
   "author": {
     "name": "Joseph Pan",
-    "email": "m@hahack.com",
+    "email": "cs.wzpan@gmail.com",
     "url": "http://hahack.com/"
   },
+  "bugs": {
+    "url": "http://github.com/wzpan/hexo-tag-plugins/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "hexo-tag-plugins",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "53e8f023d278719ed11bd0f3bf66c192f8e8c3a0",
+    "tarball": "https://registry.npmjs.org/hexo-tag-hahack/-/hexo-tag-hahack-0.0.8.tgz"
+  },
+  "gitHead": "044f94081daa972db6457061c0bcd0ba0689d652",
+  "homepage": "https://github.com/wzpan/hexo-tag-plugins",
+  "maintainers": [
+    {
+      "name": "hahack",
+      "email": "cs.wzpan@gmail.com"
+    }
+  ],
+  "name": "hexo-tag-hahack",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wzpan/hexo-tag-plugins.git"
+  },
+  "scripts": {},
   "tags": [
     "tag_plugins",
     "bootstrap",
     "hexo"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/wzpan/hexo-tag-bootstrap.git"
-  },
-  "bugs": {
-    "url": "http://github.com/wzpan/hexo-tag-bootstrap/issues"
-  },
-  "dependencies": {},
-  "readmeFilename": "README.md",
-  "description": "hexo-tag-bootstrap",
-  "homepage": "https://github.com/wzpan/hexo-tag-bootstrap"  
+  "version": "0.0.8"
 }
